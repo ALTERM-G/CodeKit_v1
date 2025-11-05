@@ -1,0 +1,9 @@
+cryptography
+pycryptodome
+argon2-cffi
+bcrypt
+pyfiglet
+colorama
+termcolor
+PyQt6
+setuptools

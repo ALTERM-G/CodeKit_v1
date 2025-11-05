@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+
+<svg
+   width="800px"
+   height="800px"
+   viewBox="0 0 24 24"
+   fill="none"
+   data--h-bstatus="0OBSERVED"
+   version="1.1"
+   id="svg11"
+   sodipodi:docname="minimize_red.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs15" />
+  <sodipodi:namedview
+     id="namedview13"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     showgrid="false"
+     inkscape:zoom="0.295"
+     inkscape:cx="367.79661"
+     inkscape:cy="401.69492"
+     inkscape:window-width="1278"
+     inkscape:window-height="996"
+     inkscape:window-x="0"
+     inkscape:window-y="26"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="SVGRepo_iconCarrier" />
+  <g
+     id="SVGRepo_bgCarrier"
+     stroke-width="0"
+     data--h-bstatus="0OBSERVED" />
+  <g
+     id="SVGRepo_tracerCarrier"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     data--h-bstatus="0OBSERVED" />
+  <g
+     id="SVGRepo_iconCarrier"
+     data--h-bstatus="0OBSERVED">
+    <path
+       d="M20 4L14 10M14 10H17.75M14 10V6.25"
+       stroke="#ffffff"
+       stroke-width="1.5"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       data--h-bstatus="0OBSERVED"
+       id="path4"
+       style="stroke:#dd1124;stroke-opacity:1" />
+    <path
+       d="M4 20L10 14M10 14H6.25M10 14V17.75"
+       stroke="#ffffff"
+       stroke-width="1.5"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       data--h-bstatus="0OBSERVED"
+       id="path6"
+       style="stroke:#dd1124;stroke-opacity:1" />
+    <path
+       opacity="0.5"
+       d="M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12Z"
+       stroke="#ffffff"
+       stroke-width="1.5"
+       data--h-bstatus="0OBSERVED"
+       id="path8"
+       style="stroke:#dd1124;stroke-opacity:1;opacity:1" />
+  </g>
+</svg>
