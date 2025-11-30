@@ -1,0 +1,43 @@
+# Maintainer
+pkgname=codekit-alterm
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="A versatile conversion and analysis toolkit."
+arch=('any')
+url="https://github.com/your-repo/ALTERM-APPv1"
+license=('custom') 
+
+# Python dependencies for the application
+depends=(
+  'python'
+  'python-pyqt6'
+  'python-cryptography'
+  'python-pycryptodomex'
+  'python-argon2-cffi'
+  'python-bcrypt'
+  'python-pyfiglet'
+  'python-colorama'
+)
+
+# The source is a tarball created from the parent directory.
+source=("${pkgname}-${pkgver}.tar.gz")
+sha256sums=('0017b01b28804f9aac783b0454aea7aa2eae3c85263c72e8f547e89dc31497c7')
+
+package() {
+  # Install the application files to /usr/share/alterm-app
+  install -d "${pkgdir}/usr/share/${pkgname}"
+  cp -r . "${pkgdir}/usr/share/${pkgname}/"
+
+  # Make the main script executable
+  chmod +x "${pkgdir}/usr/share/${pkgname}/src/main.py"
+
+  # Create a symlink in /usr/bin to make the app executable from the terminal
+  install -d "${pkgdir}/usr/bin"
+  ln -s "/usr/share/${pkgname}/src/main.py" "${pkgdir}/usr/bin/${pkgname}"
+
+  # Install the .desktop file for application menus
+  install -Dm644 "codekit-alterm.desktop" "${pkgdir}/usr/share/applications/${pkgname}.desktop"
+
+  # Install the application icon
+  install -Dm644 "assets/icons/alterm-app.png" "${pkgdir}/usr/share/pixmaps/${pkgname}.png"
+}
