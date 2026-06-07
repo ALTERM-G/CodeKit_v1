@@ -1,0 +1,8 @@
+PyQt6
+PyQt6-Qt6
+cryptography
+pycryptodome
+argon2-cffi
+bcrypt
+pyfiglet
+colorama

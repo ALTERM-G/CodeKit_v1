@@ -1,0 +1,16 @@
+[project]
+name = "codekit-v1-main"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "argon2-cffi>=25.1.0",
+    "bcrypt>=5.0.0",
+    "colorama>=0.4.6",
+    "cryptography>=46.0.5",
+    "pycryptodome>=3.23.0",
+    "pyfiglet>=1.0.4",
+    "pyqt6>=6.10.2",
+    "pyqt6-qt6>=6.10.2",
+]

@@ -1,0 +1,49 @@
+# Maintainer: Alterm <alterm@example.com>
+pkgname=codekit-alterm
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="A versatile conversion and analysis toolkit."
+arch=('any')
+url="https://github.com/Alterm-cmd/CodeKit_v1"
+license=('MIT') 
+
+# Python dependencies for the application
+depends=(
+  'python'
+  'python-pyqt6'
+  'python-pyqt6-webengine'
+  'python-cryptography'
+  'python-pycryptodomex'
+  'python-argon2-cffi'
+  'python-bcrypt'
+  'python-pyfiglet'
+  'python-colorama'
+  'python-requests'
+)
+
+# Fetch sources from GitHub. This is cleaner than a manual tarball.
+# To build from a local directory, point the source to your project root.
+source=("$pkgname-$pkgver.tar.gz")
+sha256sums=('SKIP')
+
+package() {
+  # cd into the directory created by extracting the tarball
+  cd "$pkgname-$pkgver"
+
+  # Install application source files, ensuring scripts are executable
+  install -d "${pkgdir}/usr/share/${pkgname}"
+  cp -r assets data README.md "${pkgdir}/usr/share/${pkgname}/"
+  install -d "${pkgdir}/usr/share/${pkgname}/src"
+  install -m755 src/main.py "${pkgdir}/usr/share/${pkgname}/src/main.py"
+  cp -r src/app "${pkgdir}/usr/share/${pkgname}/src/"
+
+  # Create an executable wrapper script in /usr/bin
+  install -d "${pkgdir}/usr/bin"
+  install -Dm755 <(echo '#!/bin/sh'; echo 'exec python /usr/share/codekit-alterm/src/main.py "$@"') "${pkgdir}/usr/bin/${pkgname}"
+
+  # Install the .desktop file for application menus
+  install -Dm644 "installer/arch/codekit-alterm.desktop" "${pkgdir}/usr/share/applications/${pkgname}.desktop"
+
+  # Install the application icon
+  install -Dm644 "assets/icons/alterm-app.png" "${pkgdir}/usr/share/pixmaps/${pkgname}.png"
+}
